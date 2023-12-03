@@ -1,12 +1,42 @@
+import { useState } from "react";
 import { Box } from "@mui/material";
+import { Logo } from "./pages/Logo/Logo";
+import { Slash } from "./pages/Slash/Slash";
+import { Music } from "./pages/Music/Music";
+import { Recommended } from "./pages/Recommended/Recommended";
+import { Account } from "./pages/Account/Account";
+import { Player } from "./pages/Player/Player";
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState("logo");
+
+  const renderComponent = () => {
+    switch (currentPage) {
+      case "slash":
+        return <Slash setCurrentPage={setCurrentPage} />;
+      case "music":
+        return <Music setCurrentPage={setCurrentPage} />;
+      case "recommended":
+        return <Recommended setCurrentPage={setCurrentPage} />;
+      case "account":
+        return <Account setCurrentPage={setCurrentPage} />;
+      case "player":
+        return <Player setCurrentPage={setCurrentPage} />;
+      default:
+        return <Logo setCurrentPage={setCurrentPage} />;
+    }
+  };
+
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
-      <img
-        loading="lazy"
-        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&"
-      />
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      paddingY={10}
+      height="100vh"
+      width="100vw"
+    >
+      {renderComponent()}
     </Box>
   );
 };

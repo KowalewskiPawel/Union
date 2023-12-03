@@ -1,0 +1,105 @@
+.palying {
+    height: 83px;
+    width: 413px;
+  }
+  
+  .palying .overlap-group {
+    height: 84px;
+    position: relative;
+  }
+  
+  .palying .rectangle {
+    background-color: #000000;
+    height: 74px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 413px;
+  }
+  
+  .palying .text-wrapper {
+    color: #f6d424cc;
+    font-family: "Mulish", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    left: 86px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 24px;
+    width: 160px;
+  }
+  
+  .palying .dunsin {
+    color: #f6d83dcc;
+    font-family: "Mulish", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    height: 14px;
+    left: 86px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 53px;
+    width: 74px;
+  }
+  
+  .palying .next {
+    height: 23px;
+    left: 359px;
+    position: absolute;
+    top: 35px;
+    width: 23px;
+  }
+  
+  .palying .img {
+    height: 23px;
+    left: 273px;
+    position: absolute;
+    top: 35px;
+    width: 23px;
+  }
+  
+  .palying .pause {
+    height: 26px;
+    left: 314px;
+    position: absolute;
+    top: 33px;
+    width: 26px;
+  }
+  
+  .palying .vector {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 413px;
+  }
+  
+  .palying .vector-2 {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 218px;
+  }
+  
+  .palying .ellipse {
+    background-color: #f6d424cc;
+    border-radius: 9.18px/9.19px;
+    height: 18px;
+    left: 209px;
+    position: absolute;
+    top: 0;
+    width: 18px;
+  }
+  
+  .palying .PW-logo {
+    height: 70px;
+    left: 4px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 70px;
+  }
