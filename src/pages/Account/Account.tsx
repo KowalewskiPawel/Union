@@ -1,7 +1,7 @@
 import { Palying } from "../../components/Palying";
 import "./style.css";
 
-export const Account = ({ setCurrentPage }: { setCurrentPage: (page: string) => void }): JSX.Element => {
+export const Account = (): JSX.Element => {
   return (
     <div className="index">
       <div className="div">

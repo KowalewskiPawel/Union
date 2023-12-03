@@ -19,9 +19,9 @@ const App = () => {
       case "recommended":
         return <Recommended setCurrentPage={setCurrentPage} />;
       case "account":
-        return <Account setCurrentPage={setCurrentPage} />;
+        return <Account />;
       case "player":
-        return <Player setCurrentPage={setCurrentPage} />;
+        return <Player />;
       default:
         return <Logo setCurrentPage={setCurrentPage} />;
     }
