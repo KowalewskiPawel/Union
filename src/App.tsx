@@ -1,35 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Box } from "@mui/material";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Box sx={{ display: "flex", alignItems: "center" }}>
+      <img
+        loading="lazy"
+        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e071cce418b7443e0a4cd1e64e03fb278932dbbc47c105d9845659f173b179?apiKey=1439624597d244f29dce9dcec4c85e72&"
+      />
+    </Box>
+  );
+};
 
-export default App
+export default App;
